@@ -1,0 +1,23 @@
+<!doctype html>
+<html style="font-family: monospace">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="./dist/index.iife.js#IIFE:UUUD"></script>
+
+    <script src="./dist/index.umd.js"></script>
+    <script>
+      iseedeadpeople.setup('LLLD', () => alert('umd'));
+    </script>
+
+    <script type="module">
+      import { setup } from './dist/index.esm.js';
+      setup('RRRD', () => alert('module'));
+    </script>
+
+    <script>
+      addEventListener('load', () => {
+        document.body.textContent = document.cookie;
+      });
+    </script>
+  </head>
+</html>

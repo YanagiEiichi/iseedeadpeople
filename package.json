@@ -1,0 +1,39 @@
+{
+  "name": "iseedeadpeople",
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "iife": "dist/index.iife.js",
+  "umd": "dist/index.umd.js",
+  "description": "Register a hidden cheat gesture to enable/disable a custom flag in cookie",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "yarn lint && yarn format && yarn clean && rollup -c",
+    "start": "yarn clean && rollup -c --watch",
+    "format": "prettier src -w",
+    "lint": "eslint src",
+    "clean": "rimraf dist"
+  },
+  "author": "YanagiEiichi <576398868@qq.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2",
+    "rimraf": "^6.0.1",
+    "rollup": "^4.34.2",
+    "tslib": "^2.8.1",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.23.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YanagiEiichi/iseedeadpeople.git"
+  }
+}
