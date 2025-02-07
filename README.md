@@ -11,7 +11,7 @@ A config string formatted `${flag}:${gesture}` must be set in the URL hash.
 For example,
 
 ```html
-<script src="./dist/index.iife.js#ISEEDEADPEOPLE:UUDDLRLR"></script>
+<script src="./dist/index.iife.js#myflag:UUDDLRLR"></script>
 ```
 
 In this case,
@@ -24,6 +24,14 @@ If a user makes the gesture, the value of the cookie named `myflag` will be set 
 and if the gesture is made one more time, that cookie will be removed.
 
 ### As a package
+
+Include from NPM.
+
+```shell
+npm install iseedeadpeople --save
+```
+
+Setup gesture and handler in your project.
 
 ```typescript
 import { setup } from 'iseedeadpeople';
