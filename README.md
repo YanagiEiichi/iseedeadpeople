@@ -2,6 +2,11 @@
 
 Register a hidden cheat gesture to enable/disable a custom flag in cookie.
 
+## Background
+
+For various reasons, debugging tools cannot be included directly in the production environment.
+An unconventional means is required to support dynamic switching.
+
 ## Usage
 
 ### IIFE
@@ -11,7 +16,7 @@ A config string formatted `${flag}:${gesture}` must be set in the URL hash.
 For example,
 
 ```html
-<script src="./dist/index.iife.js#myflag:UUDDLRLR"></script>
+<script src="https://cdn.jsdelivr.net/npm/iseedeadpeople/dist/index.iife.js#myflag:UUDDLRLR"></script>
 ```
 
 In this case,
@@ -43,3 +48,8 @@ setup(['U', 'R', 'D', 'L'], () => {
   alert('You made a gesture `URDL`');
 });
 ```
+
+## Examples
+
+1. [Dynamic switching for PageSpy](https://yanagieiichi.github.io/iseedeadpeople/examples/pagespy.html)
+2. [Dynamic switching for vConsole](https://yanagieiichi.github.io/iseedeadpeople/examples/vconsole.html)

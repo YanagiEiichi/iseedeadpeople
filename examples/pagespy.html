@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <script src="https://cdn.jsdelivr.net/npm/iseedeadpeople/dist/index.iife.js#pagespy:URDL"></script>
+    <script>
+      if (/(^|;\s*)pagespy=true(;|$)/.test(document.cookie)) {
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/@huolala-tech/page-spy-plugin-whole-bundle';
+        script.addEventListener('load', function () {
+          new WholeBundle();
+        });
+        document.head.appendChild(script);
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Try to make a URDL gesture</h1>
+  </body>
+</html>
