@@ -1,4 +1,4 @@
-# iseedeadpeople
+# iseedeadpeople · [![LICENSE](https://img.shields.io/npm/l/iseedeadpeople)](LICENSE.txt) [![NPM Version](https://img.shields.io/npm/v/iseedeadpeople)](https://www.npmjs.com/package/iseedeadpeople)
 
 Register a hidden cheat gesture to enable/disable a custom flag in cookie.
 
